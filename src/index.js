@@ -1,16 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import '@/assets/css/pc/reset.css';
-import '@/assets/css/pc/index.css';
-import App from './App';
-import * as serviceWorkerRegistration from './serviceWorkerRegistration';
-import reportWebVitals from './reportWebVitals';
-
+import React from "react";
+import ReactDOM from "react-dom";
+import "@/assets/css/pc/reset.css";
+import "@/assets/css/pc/index.css";
+import App from "./App";
+import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
+import reportWebVitals from "./reportWebVitals";
+import api from "./services/api";
+React.prototype.api = api;
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
